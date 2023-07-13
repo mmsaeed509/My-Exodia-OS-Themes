@@ -97,12 +97,13 @@ LAUNCH_SINGLE_BAR() {
 	done
 
 	# Launch polybar #
-	polybar -q main -c   "$DIR"/config &
-	polybar -q sec -c    "$DIR"/config &
-	polybar -q third -c  "$DIR"/config &
-	polybar -q fourth -c "$DIR"/config &
-	polybar -q fifth -c  "$DIR"/config &
-	polybar -q sixth -c  "$DIR"/config &
+	polybar -q main -c     "$DIR"/config &
+	polybar -q sec -c      "$DIR"/config &
+	polybar -q third -c    "$DIR"/config &
+	polybar -q network -c  "$DIR"/config &
+	polybar -q fourth -c   "$DIR"/config &
+	polybar -q fifth -c    "$DIR"/config &
+	polybar -q sixth -c    "$DIR"/config &
 
 }
 
@@ -143,12 +144,13 @@ LAUNCH_MULTI_BAR() {
 		
 		do
 
-			MONITOR=$MON polybar -q main -c   "$DIR"/config &
-			MONITOR=$MON polybar -q sec -c    "$DIR"/config &
-			MONITOR=$MON polybar -q third -c  "$DIR"/config &
-			MONITOR=$MON polybar -q fourth -c "$DIR"/config &
-			MONITOR=$MON polybar -q fifth -c  "$DIR"/config &
-			MONITOR=$MON polybar -q sixth -c  "$DIR"/config &
+			MONITOR=$MON polybar -q main -c     "$DIR"/config &
+			MONITOR=$MON polybar -q sec -c      "$DIR"/config &
+			MONITOR=$MON polybar -q third -c    "$DIR"/config &
+			MONITOR=$MON polybar -q network -c  "$DIR"/config &
+			MONITOR=$MON polybar -q fourth -c   "$DIR"/config &
+			MONITOR=$MON polybar -q fifth -c    "$DIR"/config &
+			MONITOR=$MON polybar -q sixth -c    "$DIR"/config &
 	
 	done
 

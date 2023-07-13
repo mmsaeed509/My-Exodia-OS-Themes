@@ -102,11 +102,11 @@ format-playing = ${self.format-online}
 format-paused = ${self.format-online}
 format-stopped = ${self.format-online}
 
-label-song =  "[ %title% ]"
+label-song =  "%title%"
 ; label-song =  "%title% | %artist%"
 
 label-song-foreground = ${color.GREEN}
-label-song-maxlen = 60
+label-song-maxlen = 12
 label-song-ellipsis = true
 
 icon-repeat = ""

@@ -14,8 +14,8 @@
 ################################################################
 
 count=0
-connected=" ∙ 說"
-disconnected=" ∙ ﲁ"
+connected=" 說"
+disconnected="ﲁ"
 
 ID="$(ip link | awk '/state UP/ {print $2}')"
 

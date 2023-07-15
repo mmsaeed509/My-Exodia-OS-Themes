@@ -197,7 +197,7 @@ GET_WEATHER_INFO() {
 	
 		else
 
-				echo -e "%{T3}%{F#F06576} Weather Unavailable"
+				echo -e "%{T3}%{F#F06576} No Data"
 
 		fi
 

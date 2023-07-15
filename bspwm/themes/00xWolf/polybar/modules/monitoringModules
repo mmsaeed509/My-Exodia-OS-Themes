@@ -100,20 +100,18 @@ fixed-values = true
 
 format-mounted = <label-mounted>
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${color.background}
-format-mounted-prefix-background = ${color.cyan}
+
+format-mounted-foreground = ${color.BACKGROUND}
+format-mounted-background = ${color.GREEN}
 
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = " "
-format-unmounted-prefix-foreground = ${color.background}
-format-unmounted-prefix-background = ${color.cyan}
 
-label-mounted = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e duf &:} %free%%{A}"
-label-unmounted = " %mountpoint%: NA"
-label-mounted-foreground = ${color.background}
+format-unmounted-foreground = ${color.BACKGROUND}
+format-unmounted-background = ${color.GREEN}
 
-label-mounted-background = ${color.cyan}
-label-unmounted-background = ${color.cyan}
+label-mounted = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e duf &:} %free% %{A}"
+label-unmounted = " %mountpoint%: NA "
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -131,13 +129,16 @@ format-background = ${color.GREEN}
 type = custom/script
 exec = free -g | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
 format = <label>
-format-prefix = "" 
+format-foreground = ${color.BACKGROUND}
+format-background = ${color.GREEN}
+
+format-prefix = "| " 
 format-prefix-font = 3
 
 label = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e htop &:}%output%GB%{A}"
 label-padding = 1
-label-font = 4
-format-prefix-foreground = #d19a66
+label-font = 3
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/updates-pacman]

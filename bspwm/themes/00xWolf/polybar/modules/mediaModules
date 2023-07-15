@@ -106,7 +106,7 @@ label-song =  "%title%"
 ; label-song =  "%title% | %artist%"
 
 label-song-foreground = ${color.GREEN}
-label-song-maxlen = 12
+label-song-maxlen = 10
 label-song-ellipsis = true
 
 icon-repeat = ""
@@ -119,7 +119,7 @@ icon-repeat-foreground = #FF0677
 type = custom/text
 
 content = ""
-content-font = 5
+content-font = 3
 content-foreground = ${color.WHITE}
 content-padding = 0
 click-left = music --albumArtCover

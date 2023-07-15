@@ -100,12 +100,14 @@ fixed-values = true
 
 format-mounted = <label-mounted>
 format-mounted-prefix = " "
+format-mounted-prefix-font = 5
 
 format-mounted-foreground = ${color.BACKGROUND}
 format-mounted-background = ${color.GREEN}
 
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = " "
+format-unmounted-prefix-font = 5
 
 format-unmounted-foreground = ${color.BACKGROUND}
 format-unmounted-background = ${color.GREEN}

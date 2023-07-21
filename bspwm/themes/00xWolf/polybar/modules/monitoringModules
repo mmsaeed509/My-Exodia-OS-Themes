@@ -43,9 +43,9 @@ label-charging-foreground = ${color.BACKGROUND}
 label-discharging-foreground = ${color.BACKGROUND}
 label-full-foreground = ${color.BACKGROUND}
 
-label-charging-font = 3
-label-discharging-font = 3
-label-full-font = 3
+label-charging-font = 2
+label-discharging-font = 2
+label-full-font = 2
 
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
@@ -86,9 +86,10 @@ format-prefix-font = 3
 format-prefix-foreground = ${color.BACKGROUND}
 format-prefix-background = ${color.GREEN}
 label = "%{A1:stacer &:} %percentage%% |%{A}"
-label-font = 3
+label-font = 2
 label-background = ${color.GREEN}
 label-foreground = ${color.BACKGROUND}
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/filesystem]
@@ -113,7 +114,10 @@ format-unmounted-foreground = ${color.BACKGROUND}
 format-unmounted-background = ${color.GREEN}
 
 label-mounted = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e duf &:} %free% %{A}"
+label-mounted-font = 2
+
 label-unmounted = " %mountpoint%: NA "
+label-unmounted-font = 2
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -129,7 +133,7 @@ format-background = ${color.GREEN}
 
 [module/memory]
 type = custom/script
-exec = free -g | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+exec = exec free -g | sed -n 's/^Mem:\\s\\+[0-9]\\+\\s\\+\\([0-9]\\+\\)\\s.\\+/\\1/p'
 format = <label>
 format-foreground = ${color.BACKGROUND}
 format-background = ${color.GREEN}
@@ -139,7 +143,7 @@ format-prefix-font = 3
 
 label = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e htop &:}%output%GB%{A}"
 label-padding = 1
-label-font = 3
+label-font = 2
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -152,8 +156,8 @@ format = <label>
 ;label = %output% Updates
 label = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e sudo pacman -Syyu &:}  %output% %{A}"
 
-format-font = 3
-label-foreground = #7936FF
+format-font = 2
+label-foreground = ${color.sep-1-color}
 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

@@ -18,3 +18,12 @@ ALTBLUE = #FD4955
 ALTMAGENTA = #E9698E
 ALTCYAN = #EA7288
 ALTWHITE = #782831
+
+bar-background = #272d36
+background = #272D36
+
+sep-1-color = #7936FF
+sep-2-color = #989cff
+red-color = #ff0008
+cayn-color = #80E6FE
+pink-color = #FF0677

@@ -20,7 +20,7 @@ format-volume = <ramp-volume><label-volume>
 format-muted = <label-muted>
 format-muted-prefix = " 婢"
 format-muted-prefix-font = 3
-format-muted-prefix-foreground = #ff0000
+format-muted-prefix-foreground = ${color.red-color}
 format-muted-prefix-background = ${color.GREEN}
 
 label-volume = %percentage%%
@@ -28,7 +28,7 @@ label-volume-foreground = ${color.BACKGROUND}
 label-volume-background = ${color.GREEN}
 
 label-muted = " Mute"
-label-muted-foreground = #ff0000
+label-muted-foreground = ${color.red-color}
 label-muted-background = ${color.GREEN}
 
 ramp-volume-0 = " 奄 "
@@ -110,7 +110,7 @@ label-song-maxlen = 10
 label-song-ellipsis = true
 
 icon-repeat = ""
-icon-repeat-foreground = #FF0677
+icon-repeat-foreground = ${color.pink-color}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 

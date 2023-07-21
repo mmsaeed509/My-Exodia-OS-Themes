@@ -18,6 +18,8 @@ EXODIA_CONFIG_FILE="${I3_DIR}/exodia.conf"
 CONFIG_DIR="$HOME/.config"
 
 # Get Theme config #
+sed -i "s#^background = #background = ${I3_DIR}/themes/${THEME_NAME}/bg.png#" ${THEME_CONFIG}
+
 BACKGROUND=$(grep '^background\s*=' "${THEME_CONFIG}" | cut -d '=' -f2 | tr -d ' ')
 THEME=$(grep '^theme\s*=' "${THEME_CONFIG}" | cut -d '=' -f2 | tr -d ' ')
 ICONS=$(grep '^icons\s*=' "${THEME_CONFIG}" | cut -d '=' -f2 | tr -d ' ')

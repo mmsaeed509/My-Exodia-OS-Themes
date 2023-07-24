@@ -182,8 +182,8 @@ time = %I:%M %p
 time-alt = %A, %d %B %Y
 
 format = <label>
-format-prefix = "  "
-format-prefix-font = 3
+format-prefix = "  "
+format-prefix-font = 2
 format-prefix-foreground = ${color.BACKGROUND}
 format-prefix-background = ${color.GREEN}
 
